@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Les polices */
+@font-face {
+  font-family: "Lucy";
+  src: url("../fonts/LucythecatRegular-R7mA.otf");
+}
+
+body {
+  font-family: "futura bold", "arial", "sans-serif";
+  width: 100%;
+}
+
+/* Menu */
+.menu {
+  background-color: black;
+  overflow: auto;
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+  top: 0;
+}
+
+.menu a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 18px 16px 14px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: "futura bold", "arial", "sans-serif";
+}
+
+.menu a:hover {
+  background-color: white;
+  color: black;
+}
+
+.menu a.active {
+  background-color: white;
+  color: black;
+}
+
+.menu span {
+  float: right;
+  color: white;
+  padding: 24px 22px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  overflow: auto;
+  text-transform: uppercase;
+}
+
+/*--- ANIMATION --> "heartbeat" ---*/
+.menu .fas {
+  font-size: xx-large;
+  color: #e00;
+  animation: beat .25s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes beat {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/*---------------------------------*/
+
+/* Footer */
+footer {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 5px;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  justify-content: center;
+}
+
+section {
+  width: 100%;
+  margin-top: 18%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Lucy";
+  font-size: 100px;
+  max-width: 80%;
+}
+
+div>h1 {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  font-size: 12em;
+}
+
+/*--------- ANIMATION --> "shadow_title" -------------*/
+#title {
+  display: inline-block;
+  color: black;
+  font-size: 12em;
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  text-shadow: .03em .03em 0 #BBBBBB;
+}
+
+#title:after {
+  content: attr(data-shadow);
+  position: absolute;
+  top: .06em;
+  left: .06em;
+  z-index: -1;
+  text-shadow: none;
+  background-image:
+    linear-gradient(45deg,
+      transparent 45%,
+      black 45%,
+      black 55%,
+      transparent 0);
+  background-size: .05em .05em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shad-anim 15s linear infinite;
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0
+  }
+
+  0% {
+    background-position: 100% -100%
+  }
+}
+
+/* --------------------------------------------------*/
+
+/* Exercice 1 */
+#cube {
+  width: 15vw;
+  height: 15vw;
+  border: 3px solid black;
+  position: absolute;
+  margin: auto;
+  animation-name: rotate;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    background-color: black;
+  }
+
+  50% {
+    transform: rotate(540deg);
+    background-color: #BBBBBB;
+  }
+
+  100% {
+    transform: rotate(1080deg);
+    background-color: black;
+  }
+}
+
+/* Exercice 3 */
+#container {
+  height: 56vh;
+  width: 12vw;
+  position: absolute;
+  margin: auto;
+  bottom: 18%;
+  background-color: white;
+  border: 1vw solid black;
+}
+
+#ball {
+  background-image: url(../images/basketball.png);
+  background-size: cover;
+  position: relative;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  animation: up 2s infinite alternate;
+}
+
+@keyframes up {
+  0% {
+    top: 19vw;
+  }
+
+  100% {
+    top: 0vw;
+  }
+}
+
+/* Exercice 3 */
+.ball {
+  position: relative;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: white;
+  animation: loading 3s infinite;
+}
+
+#ball2 {
+  animation-delay: 1s;
+}
+
+#ball3 {
+  animation-delay: 2s;
+}
+
+@keyframes loading {
+  0% {
+    background-color: white;
+  }
+
+  20% {
+    background-color: white;
+  }
+
+  80% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: black;
+  }
+}
+
+/* Exercice 4 */
+#container1 {
+  position: absolute;
+  border: 1vw dashed black;
+  width: 30vw;
+  height: 30vw;
+  margin: auto;
+  top: 25%;
+}
+
+.cubeRace {
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  animation-name: race;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  font-size: 3.5vw;
+  border-radius: 30%;
+  padding: .1vw;
+}
+
+#cubeRace1 {
+  background-color: #161A20;
+  color: #F4A950;
+  z-index: 5;
+}
+
+#cubeRace2 {
+  background-color: #D2302C;
+  color: #F7F7F9;
+  animation-delay: 2s;
+  z-index: 4;
+}
+
+#cubeRace3 {
+  background-color: #317773;
+  color: #E2D1F9;
+  animation-delay: 4s;
+  z-index: 3;
+}
+
+#cubeRace4 {
+  background-color: #3B195B;
+  color: #FEF747;
+  animation-delay: 6s;
+  z-index: 2;
+}
+
+#cubeRace5 {
+  background-color: #FFE8F5;
+  color: #CB02FF;
+  animation-delay: 8s;
+  z-index: 1;
+}
+
+@keyframes race {
+  0% {
+    top: 0%;
+    left: 0%;
+    transform: rotate(0deg);
+    animation-timing-function: ease-in-out;
+  }
+
+  25% {
+    top: 0%;
+    left: 82%;
+    transform: rotate(-180deg);
+    animation-timing-function: linear;
+  }
+
+  50% {
+    top: 82%;
+    left: 82%;
+    transform: rotate(-360deg);
+    animation-timing-function: ease-in-out;
+  }
+
+  75% {
+    top: 82%;
+    left: 0%;
+    transform: rotate(-540deg);
+    animation-timing-function: linear;
+  }
+
+  100% {
+    top: 0%;
+    left: 0%;
+    transform: rotate(-720deg);
+  }
+}
+
+/* Exercice 5 */
+#container2 {
+  position: relative;
+  height: 60vh;
+  width: 60vw;
+  left: -10%;
+  top: 10%;
+  margin: auto;
+  perspective: 1000px;
+  text-align: center;
+}
+
+#carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotateCarousel 10s linear infinite;
+}
+
+.window {
+  position: absolute;
+  width: 20vw;
+  transform-style: preserve-3d;
+  animation: spin 10s linear infinite;
+}
+
+#window1,
+#window2,
+#window3,
+#window4,
+#window5,
+#window6 {
+  position: absolute;
+  font-size: 150px;
+  text-shadow: -2px 0 #BD942B, 0 2px #BD942B, 2px 0 #BD942B, 0 -2px #BD942B;
+}
+
+#window1 {
+  color: #8FCFC1;
+  transform: translateZ(180px);
+}
+
+#window2 {
+  color: #F9A2C5;
+  transform: rotateY(60deg) translateZ(180px);
+}
+
+#window3 {
+  color: #F3BA8D;
+  transform: rotateY(120deg) translateZ(180px);
+}
+
+#window4 {
+  color: #8FCFC1;
+  transform: rotateY(180deg) translateZ(180px);
+}
+
+#window5 {
+  color: #F9A2C5;
+  transform: rotateY(240deg) translateZ(180px);
+}
+
+#window6 {
+  color: #F3BA8D;
+  transform: rotateY(300deg) translateZ(180px);
+}
+
+
+@keyframes rotateCarousel {
+  0% {
+    top: 30%;
+    left: 10%;
+    transform: rotateX(0deg);
+  }
+
+  25% {
+    top: 60%;
+    left: 30%;
+    transform: rotateX(180deg);
+  }
+
+  50% {
+    top: 10%;
+    left: 50%;
+    transform: rotateX(360deg);
+  }
+
+  75% {
+    top: 50%;
+    left: 90%;
+    transform: rotateX(180deg);
+  }
+
+  100% {
+    top: 80%;
+    left: 60%;
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+/* Exercice 6 */
+/* Ce n'était pas possible d'utiliser la propriété "transform" sans déformer le texte à cause de la structure de mon menu */
+/* Entre une animation et une transition j'ai opté pour une transition */
+#ex6 {
+  height: 8vh;
+}
+
+#ex6:hover {
+  margin-left: -2vw;
+  margin-top: -2vw;
+  width: 104%;
+  background-color: black;
+  color: white;
+  padding: 2vw;
+  transition: height 3s linear;
+  height: 50vh;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+  padding-left: 20px;
+}

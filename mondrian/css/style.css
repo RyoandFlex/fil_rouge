@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+}
+
+/* GRID avec grid-template-area */
+/* Chaque area est définie par un nom de zone (ici lettre+chiffre), le background du container viendra combler les trous */
+
+#container {
+  display: grid;
+  grid-template-areas:
+    "w1 w1 w1 w1 w1 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    "w1 w1 w1 w1 w1 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    "w1 w1 w1 w1 w1 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    "w1 w1 w1 w1 w1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    "w1 w1 w1 w1 w1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    "w1 w1 w1 w1 w1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    "w1 w1 w1 w1 w1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    "w1 w1 w1 w1 w1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    "w1 w1 w1 w1 w1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    "w1 w1 w1 w1 w1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    "w1 w1 w1 w1 w1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 w5 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w7 w8 w8 w8 w8 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1 r2 r2 r2 r2 r2 w4 w4 w4 w4 w4 y1 y1 y1 y1 y1"
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  y3 y3 y3 y3 y3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 x1 x1 x1 x1 x1 .  .  .  .  .  .  .  .  .  . "
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  y3 y3 y3 y3 y3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 x1 x1 x1 x1 x1 .  .  .  .  .  .  .  .  .  . "
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  y3 y3 y3 y3 y3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 x1 x1 x1 x1 x1 .  .  .  .  .  .  .  .  .  . "
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  y3 y3 y3 y3 y3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 x1 x1 x1 x1 x1 .  .  .  .  .  .  .  .  .  . "
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  y3 y3 y3 y3 y3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 x1 x1 x1 x1 x1 .  .  .  .  .  .  .  .  .  . "
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  y3 y3 y3 y3 y3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 x1 x1 x1 x1 x1 .  .  .  .  .  .  .  .  .  . "
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  y3 y3 y3 y3 y3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 x1 x1 x1 x1 x1 .  .  .  .  .  .  .  .  .  . "
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  y3 y3 y3 y3 y3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 x1 x1 x1 x1 x1 .  .  .  .  .  .  .  .  .  . "
+    ".  .  .  .  .  w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 w6 .  .  .  .  y3 y3 y3 y3 y3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 r3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 w9 x1 x1 x1 x1 x1 .  .  .  .  .  .  .  .  .  . "
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x3 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 y5 y5 y5 y5 y5 x5 x5 x5 x5 x5 x5 x5 x5 x5 x5"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7"
+    "x2 x2 x2 x2 x2 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 r4 .  .  .  .  y4 y4 y4 y4 y4 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7"
+    "x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 y4 y4 y4 y4 y4 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7"
+    "x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 y4 y4 y4 y4 y4 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7"
+    "x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 y4 y4 y4 y4 y4 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7"
+    "x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 y4 y4 y4 y4 y4 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7"
+    "x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 y4 y4 y4 y4 y4 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7"
+    "x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 y4 y4 y4 y4 y4 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7"
+    "x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 y4 y4 y4 y4 y4 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7"
+    "x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 y4 y4 y4 y4 y4 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7"
+    "x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 y4 y4 y4 y4 y4 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7"
+    "x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 x6 y4 y4 y4 y4 y4 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 r5 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7 x7";
+
+  width: 80vw;
+  margin: auto;
+  grid-gap: 10px;
+  padding: 10px;
+  background-color: black;
+}
+
+/* Ensuite j'attribue à chaque div son nom de zone et sa couleur */
+
+#w1White {
+  grid-area: w1;
+  background-color: #E1E1E1;
+}
+
+#w2White {
+  grid-area: w2;
+  background-color: #E1E1E1;
+}
+
+#w3White {
+  grid-area: w3;
+  background-color: #E1E1E1;
+}
+
+#w4White {
+  grid-area: w4;
+  background-color: #E1E1E1;
+}
+
+#w5White {
+  grid-area: w5;
+  background-color: #E1E1E1;
+}
+
+#w6White {
+  grid-area: w6;
+  background-color: #E1E1E1;
+}
+
+#w7White {
+  grid-area: w7;
+  background-color: #E1E1E1;
+}
+
+#w8White {
+  grid-area: w8;
+  background-color: #E1E1E1;
+}
+
+#w9White {
+  grid-area: w9;
+  background-color: #E1E1E1;
+}
+
+#x1White {
+  grid-area: x1;
+  background-color: #E1E1E1;
+}
+
+#x2White {
+  grid-area: x2;
+  background-color: #E1E1E1;
+}
+
+#x3White {
+  grid-area: x3;
+  background-color: #E1E1E1;
+}
+
+#x4White {
+  grid-area: x4;
+  background-color: #E1E1E1;
+}
+
+#x5White {
+  grid-area: x5;
+  background-color: #E1E1E1;
+}
+
+#x6White {
+  grid-area: x6;
+  background-color: #E1E1E1;
+}
+
+#x7White {
+  grid-area: x7;
+  background-color: #E1E1E1;
+}
+
+#y1Yellow {
+  grid-area: y1;
+  background-color: #F0BE0E;
+}
+
+#y2Yellow {
+  grid-area: y2;
+  background-color: #F0BE0E;
+}
+
+#y3Yellow {
+  grid-area: y3;
+  background-color: #F0BE0E;
+}
+
+#y4Yellow {
+  grid-area: y4;
+  background-color: #F0BE0E;
+}
+
+#y5Yellow {
+  grid-area: y5;
+  background-color: #F0BE0E;
+}
+
+#b1Blue {
+  grid-area: b1;
+  background-color: #180874;
+}
+
+#b2Blue {
+  grid-area: b2;
+  background-color: #180874;
+}
+
+#b3Blue {
+  grid-area: b3;
+  background-color: #180874;
+}
+
+#b4Blue {
+  grid-area: b4;
+  background-color: #180874;
+}
+
+#r1Red {
+  grid-area: r1;
+  background-color: #C40200;
+}
+
+#r2Red {
+  grid-area: r2;
+  background-color: #C40200;
+}
+
+#r3Red {
+  grid-area: r3;
+  background-color: #C40200;
+}
+
+#r4Red {
+  grid-area: r4;
+  background-color: #C40200;
+}
+
+#r5Red {
+  grid-area: r5;
+  background-color: #C40200;
+}
+
+.foot {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  padding-left: 10px;
+  color: red;
+}

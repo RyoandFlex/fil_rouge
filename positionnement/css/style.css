@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Les polices */
+@font-face {
+  font-family: "Rousseau";
+  src: url("../fonts/RousseauDeco.ttf");
+}
+
+@font-face {
+  font-family: "Crash Number";
+  src: url("../fonts/Crashnumberingserif-KVjW.ttf");
+}
+
+@font-face {
+  font-family: "Lucy";
+  src: url("../fonts/LucythecatRegular-R7mA.otf");
+}
+
+body {
+  font-family: "Rousseau", "futura bold", "arial", "sans-serif";
+  width: 100%;
+}
+
+/* Menu sticky */
+.menu {
+  background-color: black;
+  overflow: auto;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.menu a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 18px 16px 14px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: "Crash Number", "futura bold", "arial", "sans-serif";
+}
+
+.menu a:hover {
+  background-color: white;
+  color: black;
+}
+
+.menu a.active {
+  background-color: white;
+  color: black;
+}
+
+.menu span {
+  float: right;
+  color: white;
+  padding: 24px 22px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  overflow: auto;
+  text-transform: uppercase;
+}
+
+/* Les icônes de Font Awesome */
+.fas {
+  font-size: xx-large;
+}
+
+.far {
+  width: 200vw;
+  font-size: 30vw;
+  padding-bottom: 10vw;
+}
+
+/* Footer sticky */
+footer {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 5px;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Lucy";
+  font-size: 100px;
+  max-width: 80%;
+}
+
+section>img {
+  padding-bottom: 5vw;
+}
+
+section>div {
+  font-family: "Lucy";
+  font-size: 40px;
+}
+
+div>a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+section {
+  width: 100%;
+  margin-top: 18%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Mes blocs de couleur (rectangles) utilisés pour toutes les pages */
+.bloc1 {
+  background-color: #8D778E;
+  border: 3px solid black;
+  padding: 3vw;
+  width: 36vw;
+  height: 20vw;
+}
+
+.bloc2 {
+  background-color: #1E3C45;
+  border: 3px solid black;
+  padding: 3vw;
+  width: 30vw;
+  height: 14vw;
+}
+
+.bloc3 {
+  background-color: #E1BB8F;
+  border: 3px solid black;
+  width: 24vw;
+  height: 8vw;
+}
+
+.bloc4 {
+  background-color: #BFC4BE;
+  border: 3px solid black;
+  width: 70vw;
+  height: 12vw;
+}
+
+/* Mes blocs de couleur (cubes) utilisés pour toutes les pages */
+.cube1 {
+  background-color: #8D778E;
+  border: 3px solid black;
+  width: 12vw;
+  height: 12vw;
+}
+
+.cube2 {
+  background-color: #1E3C45;
+  border: 3px solid black;
+  width: 12vw;
+  height: 12vw;
+}
+
+.cube3 {
+  background-color: #E1BB8F;
+  border: 3px solid black;
+  width: 12vw;
+  height: 12vw;
+}
+
+.cube4 {
+  background-color: #BFC4BE;
+  border: 3px solid black;
+  width: 12vw;
+  height: 12vw;
+}
+
+.cube5 {
+  background-color: #FFAE80;
+  border: 3px solid black;
+  width: 12vw;
+  height: 12vw;
+}
+
+/* Exercice 2 */
+#bloc2Ex2 {
+  position: relative;
+  left: 25%;
+  background: rgba(30, 60, 69, 0.8);
+}
+
+#bloc3Ex2 {
+  position: relative;
+  right: 90%;
+}
+
+/* Exercice 3 */
+#bloc3Ex3 {
+  position: absolute;
+  left: 45%;
+  bottom: 7%;
+  width: 9vw;
+  height: 9vw;
+}
+
+/* Exercice 4 */
+#bloc3Ex4 {
+  position: absolute;
+  left: 50%;
+  bottom: 7%;
+  width: 9vw;
+  height: 9vw;
+}
+
+#bloc4Ex4 {
+  position: absolute;
+  bottom: 390%;
+  left: -390%;
+  margin: 0;
+}
+
+/* Exercice 5 */
+#sectionEx5A {
+  position: absolute;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 10%;
+  justify-content: space-around;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 26vw;
+  height: 26vw;
+}
+
+#sectionEx5R {
+  position: relative;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 10%;
+  justify-content: space-around;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 26vw;
+  height: 26vw;
+}
+
+/* Exercice 6 */
+#cube1Ex6 {
+  position: relative;
+  left: 36vw;
+  top: 12vw;
+  z-index: 1;
+}
+
+#cube2Ex6 {
+  position: relative;
+  left: 38vw;
+  top: 2vw;
+  z-index: 4;
+  opacity: 0.8;
+}
+
+#cube3Ex6 {
+  position: relative;
+  left: 48vw;
+  top: 0vw;
+  z-index: 3;
+}
+
+#cube4Ex6 {
+  position: relative;
+  left: 50vw;
+  top: -10vw;
+  z-index: 2;
+}
+
+/* Exercice 7 */
+#sectionEx7 {
+  width: 60vw;
+  margin-top: 10%;
+  margin-left: 20%;
+  position: relative;
+  display: inline-block;
+}
+
+#cube1Ex7,
+#cube2Ex7 {
+  float: left;
+}
+
+#cube3Ex7 {
+  width: 60vw;
+  clear: left;
+}
+
+#cube4Ex7,
+#cube5Ex7 {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+  padding-top: 4px;
+  padding-left: 20px;
+}

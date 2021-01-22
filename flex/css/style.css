@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Miku", "futura", "arial", "sans-serif";
+}
+
+@font-face {
+  font-family: "Miku";
+  src: url("../fonts/miku.ttf");
+}
+
+/* Pas de commentaires, je pense que le code est assez clair */
+body {
+  display: flex;
+  margin: auto;
+  margin-top: 5%;
+  width: 1261px;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  background-color: #E12985;
+  width: 1261px;
+  flex-wrap: wrap;
+  height: 80px;
+}
+
+h1,
+h2 {
+  width: 1261px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+nav {
+  background-color: #373B3E;
+  color: white;
+  width: 1261px;
+  height: 23px;
+  overflow: auto;
+  font-size: large;
+}
+
+nav>a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid #BEC8D1;
+  width: 20%;
+  text-align: center;
+  float: left;
+}
+
+aside {
+  background-color: #85CECC;
+  width: 260px;
+  height: 500px;
+  font-size: 30px;
+}
+
+article {
+  background-color: #137A7F;
+  width: 247px;
+  height: 500px;
+  padding: 5px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+footer {
+  background-color: #BEC8D1;
+  width: 1261px;
+  height: 50px;
+  font-size: 30px;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  padding-left: 20px;
+}
